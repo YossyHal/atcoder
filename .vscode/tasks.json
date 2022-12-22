@@ -1,14 +1,105 @@
 {
-    "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Main",
-            "type": "shell",
-            "command": "g++ -g main.cpp -o main.out",
+            "type": "cppbuild",
+            "label": "C/C++: g++ アクティブなファイルのビルド",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "-std=c++17",
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "detail": "デバッガーによって生成されたタスク。"
+        },
+        {
+            "label": "just run",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "${file}",
+                "-std=c++17",
+                "&&",
+                "./a.out",
+                "<",
+                "in_1.txt"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "atcoder-tools test",
+            "type": "shell",
+            "command": "atcoder-tools test",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "atcoder-tools submit",
+            "type": "shell",
+            "command": "atcoder-tools submit",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "atcoder-tools submit --unlock-safety",
+            "type": "shell",
+            "command": "atcoder-tools submit --unlock-safety",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "problemMatcher": []
         }
-    ]
+    ],
+    "version": "2.0.0"
 }

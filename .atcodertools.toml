@@ -1,0 +1,12 @@
+[codestyle]
+workspace_dir='/workspaces/atcoder/src'
+lang='cpp'
+
+[postprocess]
+exec_on_each_problem_dir='clang-format -i ./*.cpp'
+
+[compiler]
+compile_command='g++ main.cpp -o main -std=c++17'
+
+[tester]
+compile_before_testing=true

@@ -1,0 +1,16 @@
+{
+    "editor.fontFamily": "BIZ UDゴシック",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true,
+        "**/a.out": true,
+        "**/main": true,
+        "**/main.out": true,
+        "**/metadata.json": true
+    },
+    "files.eol": "\n",
+    "files.insertFinalNewline": true
+}
