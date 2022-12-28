@@ -1,6 +1,7 @@
 [codestyle]
 workspace_dir='/workspaces/atcoder/src'
 lang='cpp'
+template_file='/workspaces/atcoder/src/template.cpp'
 
 [postprocess]
 exec_on_each_problem_dir='clang-format -i ./*.cpp'
