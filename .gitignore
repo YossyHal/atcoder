@@ -2,7 +2,7 @@
 settings.json
 
 ### AtCoder sources ###
-src/*
+# src/*
 !src/template.cpp
 
 ### C++ ###
